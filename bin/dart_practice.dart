@@ -1,3 +1,4 @@
 main(){
-  print("Hellow World");
+  String name="Maruf Hasan";
+  print(name);
 }
