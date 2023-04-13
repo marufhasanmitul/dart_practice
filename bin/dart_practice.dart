@@ -1,4 +1,6 @@
 main(){
   String name="Maruf Hasan";
-  print(name);
+  //use Integer
+  int accountHolderName=45;
+  print(accountHolderName);
 }
