@@ -25,4 +25,8 @@
 
   print(myMap);
   print(myMap['name']);
+
+  print(myMap.keys);//print Key
+  print(myMap.values);//print Values
+  print(myMap.length);//print Size
 //=========================================
