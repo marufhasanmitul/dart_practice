@@ -30,3 +30,23 @@
   print(myMap.values);//print Values
   print(myMap.length);//print Size
 //=========================================
+//Constructor Map
+  //Using Method addall,remove,clear
+
+  Map<String,String> myMap=new Map();
+//====Data Add====
+  myMap.addAll({
+    'name':'Maruf Hasan',
+    'age':'26',
+    'dep':'Computer Science',
+  });
+
+  print(myMap);
+
+  myMap.remove('name');
+  print(myMap);
+
+
+  myMap.clear();
+  print(myMap);
+
