@@ -13,3 +13,16 @@
   print(myMap);
   print(myMap['name']);
 //==========================================
+
+//Constructor Map
+
+  Map<String,String> myMap=new Map();
+
+  myMap['name']='Maruf Hasan';
+  myMap['age']='29';
+  myMap['son']='Salif';
+  myMap['dep']='Computer Science';
+
+  print(myMap);
+  print(myMap['name']);
+//=========================================
