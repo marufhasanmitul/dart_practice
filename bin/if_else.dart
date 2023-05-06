@@ -26,3 +26,25 @@
   else{
     print("Average");
   }
+//==========================================
+void main(){
+  int myage=14;
+  if(myage>25){
+    print('Job Paba');
+  }
+  else if(myage>21){
+    print("Line a Rakho");
+  }
+  else if(myage>=18){
+    print("Pm ar kasse Patai dew");
+  }
+  else if(myage==15){
+    print("To Young");
+  }
+  else{
+    print('Job Dibo na');
+  }
+
+
+}
+
