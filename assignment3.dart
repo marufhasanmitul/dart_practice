@@ -1,52 +1,42 @@
-class Car{
-  String? brand;
-  String? model;
-  int? year;
-  double? milesDriven;
+class Car {
+  late String brand;
+  late String model;
+  late int year;
+  late double milesDriven;
 
   static int numberOfCars = 0;
-  
-  Car(this.brand,this.model,this.year){
+
+  Car(this.brand, this.model, this.year) {
     numberOfCars++;
   }
 
-  void drive(double miles){
+  void drive(double miles) {
     this.milesDriven = miles;
   }
 
-  double getMilesDriven(){
-    return this.milesDriven!;
+  double getMilesDriven() {
+    return this.milesDriven;
   }
 
-  String getBrand(){
-    return brand!;
+  String getBrand() {
+    return brand;
   }
 
   String getModel() {
-    return model!;
+    return model;
   }
 
   int getYear() {
-    return year!;
+    return year;
   }
 
   int getAge() {
-    int currentYear=2023;
-    return currentYear - year!;
+    int currentYear = 2023;
+    return currentYear - year;
   }
-
-
-
 }
 
-
-
-
-
-
-
-
-void main(){
+void main() {
   Car car1 = Car("Toyota", "Corolla", 2018);
   car1.drive(1000.0);
 
@@ -56,15 +46,12 @@ void main(){
   Car car3 = Car("Ford", "F-150", 2015);
   car3.drive(2000.0);
 
-
   print("Car 1:");
   print("Brand: ${car1.getBrand()}");
   print("Model: ${car1.getModel()}");
   print("Year: ${car1.getYear()}");
   print("Miles driven: ${car1.getMilesDriven()}");
   print("Age: ${car1.getAge()} years\n");
-
-
 
   print("Car 2:");
   print("Brand: ${car2.getBrand()}");
@@ -81,8 +68,4 @@ void main(){
   print("Age: ${car3.getAge()} years\n");
 
   print("Number of cars created: ${Car.numberOfCars}");
-
-
-
-
 }
