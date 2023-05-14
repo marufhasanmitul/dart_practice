@@ -8,6 +8,7 @@ class Car {
 
   Car(this.brand, this.model, this.year) {
     numberOfCars++;
+    milesDriven = 0;
   }
 
   void drive(double miles) {
